@@ -56,3 +56,10 @@ button {
   height: 140px;
   width: 100%;
 }
+
+.weather {
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
