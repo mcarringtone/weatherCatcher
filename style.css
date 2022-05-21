@@ -3,3 +3,14 @@
   background: #f7799c;
   font-family: "Montserrat", sans-serif;
 }
+
+#cityInput,
+#cityName,
+#inputContainer,
+button {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
