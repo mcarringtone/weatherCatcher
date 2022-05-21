@@ -1,17 +1,5 @@
 const btn = document.getElementById("button");
 
-let dateGrab = new Date();
-
-let weekday = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 function weatherQuery() {
   let cityRefresh = document.getElementById("cityInput");
   let cityName = document.getElementById("cityName");
@@ -61,6 +49,17 @@ function CheckDay(day) {
     return day + dateGrab.getDay();
   }
 }
+let dateGrab = new Date();
+
+let weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 for (i = 0; i < 5; i++) {
   document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
