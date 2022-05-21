@@ -14,3 +14,14 @@ button {
   font-size: 20px;
   font-weight: bold;
 }
+
+#weatherContainer {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 1300px;
+  border-radius: 10px;
+}
