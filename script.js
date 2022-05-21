@@ -48,3 +48,8 @@ function weatherQuery() {
       alert("Something Went Wrong: Try Checking Your Internet Coneciton")
     );
 }
+
+function DefaultScreen() {
+  document.getElementById("cityInput").defaultValue = "Atlanta";
+  weatherQuery();
+}
