@@ -11,3 +11,8 @@ let weekday = [
   "Friday",
   "Saturday",
 ];
+
+function weatherQuery() {
+  let cityRefresh = document.getElementById("cityInput");
+  let cityName = document.getElementById("cityName");
+  cityName.innerHTML = cityRefresh.value;
