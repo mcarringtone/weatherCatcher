@@ -28,4 +28,10 @@ function weatherQuery() {
           "Min: " +
           Number(data.list[i].main.temp_min - 273.15).toFixed(1) +
           "°";
+      } 
+      for (i = 0; i < 5; i++) {
+        document.getElementById("day" + (i + 1) + "Max").innerHTML =
+          "Max: " +
+          Number(data.list[i].main.temp_max - 273.15).toFixed(2) +
+          "°";
       }
