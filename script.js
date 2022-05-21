@@ -16,3 +16,8 @@ function weatherQuery() {
   let cityRefresh = document.getElementById("cityInput");
   let cityName = document.getElementById("cityName");
   cityName.innerHTML = cityRefresh.value;
+  fetch(
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
+      cityRefresh.value +
+      "&appid=e458f3719040b92db51cd836f40d7269"
+  )
