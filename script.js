@@ -53,3 +53,11 @@ function DefaultScreen() {
   document.getElementById("cityInput").defaultValue = "Atlanta";
   weatherQuery();
 }
+
+function CheckDay(day) {
+  if (day + dateGrab.getDay() > 6) {
+    return day + dateGrab.getDay() - 7;
+  } else {
+    return day + dateGrab.getDay();
+  }
+}
